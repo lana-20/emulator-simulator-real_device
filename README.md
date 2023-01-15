@@ -20,6 +20,8 @@ __Emulators vs. Simulators__
 
 An emulator is a desktop app that completely virtualizes all aspects of a real device, including both the hardware and OS. Simulators don’t mimic the hardware or OS. They allow the user to validate application flows, but not in a true production environment.
 
+<table width="100%"><thead><tr><th style="text-align:left; width: 34%; background: #565656; color: white">Criteria</th><th style="text-align:left; width: 33%; background: #565656; color: white">Simulation</th><th style="text-align:left; width: 33%; background: #565656; color: white">Emulation</th></tr></thead><tbody><tr><td align="justify">Provided by</td><td>Device manufacturers and other companies.</td><td>Device manufacturers.</td></tr><tr><td>Target area</td><td>Internal behavior of the mobile device.</td><td>Mobile device hardware, software, and operating system.</td></tr><tr><td>Internal structure</td><td>Written in high-level language.</td><td>Written in machine-level assembly language.</td></tr><tr><td>Used/suitable for</td><td>Unit testing, automation testing.</td><td>Unit testing, automation testing, debugging.</td></tr><tr><td>Performance</td><td>Faster compared to emulators.</td><td>Slower due to latency since it involves binary translation.</td></tr><tr><td>Reliability</td><td>Low, as it cannot simulate all types of user interactions.</td><td>Same for emulation, as it cannot simulate all types of user interactions.</td></tr></tbody></table>
+
 ## Real Devices
 
 Using real devices in mobile testing enables you to test your app on actual hardware, providing an accurate representation of how it performs in a customer's hands. This is useful for ensuring the app's functionality and compatibility on various devices.
