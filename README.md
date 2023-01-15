@@ -53,7 +53,7 @@ To run these tests, a proper execution environment, such as a test cloud, is req
 
 ## Real Devices - Advantages
 
-- Nothing ompares to the real thing
+- Nothing Compares to the Real Thing
   - While virtual devices can be useful for basic testing, truly validating an app's performance requires testing on real devices. Virtual devices are helpful for functional testing, but they may also produce false positives, where the tests pass but the app may have issues in real-world scenarios. This is because simulators and emulators primarily test the main flow of the application (happy path), rather than how it handles negative or extreme cases.
 - Better User Interface (UI) Validations
   - To ensure the accuracy of the user interface, validation should be performed on real devices. Additionally, usability issues are more readily apparent when testing on real devices, as opposed to virtual devices. This is particularly true when inputting data via the keyboard, as real devices overlay the app while virtual devices present the keyboard alongside the device interface.
@@ -62,5 +62,31 @@ To run these tests, a proper execution environment, such as a test cloud, is req
 - Improved Hardware and Sensor-Related Validations
   - Common scenarios that can be virtualized include those that involve interactions with device hardware and sensors, such as the camera, accelerometer, and biometrics. However, it's worth noting that in some cases, the behavior of real and virtual devices may vary.
 
+## Balance Virtual and Real Devices
+
+As testing occurs throughout the entire development process, from early stages to deployment and monitoring, it is necessary to utilize both real and virtual devices. A balanced approach that includes both types of platforms is essential for each phase in the application lifecycle.
+
+A proposed approach would be to use a combination of virtual devices for early testing and real devices for later stages, such as usability and performance testing, and for validating the application in real-world scenarios. This will allow teams to take advantage of the benefits of each type of platform and ensure the best possible results.
+
+Phases/Stages:
+- Code
+  - Local Validation
+    - During the development phase, developers should validate their code using either a local device or a virtual device, which is often integrated into the developer's IDE. For UI validation, it's recommended to use real devices rather than virtual ones to ensure that the outcome appears as expected.
+  - Pre-Commit Validation
+    - Unit and UI unit tests should typically be run on virtual devices (90% of the time). However, there may be instances where developers make changes to components that they anticipate will behave differently on real devices. In such cases, it is recommended to provide developers with on-demand tools that allow them to choose which tests to run and on which platform (virtual or real) to run them. This will enable developers to verify the behavior of their changes on both virtual and real devices and make more informed decisions.
+- Build
+  - Commit Job
+    - This process should run every time a developer makes a commit, performing a basic check to ensure that the change doesn't break the build or cause significant regression. Because of the need to run this job at scale with each commit, these tests should be run on virtual devices to ensure efficient execution.
+  - Multi-Merge Validation
+    - These jobs validate the last X commits and check if one of them broke the build or caused a regression. This type of job usually runs every few hours or after a certain number of code commits. It runs more tests to provide broader coverage. In this stage, more real devices are introduced into the CI process, typically a mix of 70% virtual devices and 30% real devices should be used. This will provide a balance of efficient execution and realistic testing on real devices.
+  - Night Job
+    - This job runs regression tests and expands coverage. In this stage, tests are run on real devices to ensure the application's performance in real-world scenarios.
+
+      - _The frequency of the CI process will vary depending on the team's maturity level, it can run one or more times a day. The aim is to create a balance that enables scalability while still providing comprehensive test coverage and insights into the end-user experience. To achieve scalability and enable parallel validation for multiple developers and teams, a typical CI mix might consist of a combination of virtual devices for functional testing and real devices for usability and performance testing. This will allow for efficient execution and provide valuable feedback on the application's overall performance._
+
+- Test
+  - Additional testing activities that take place outside the CI process will be run on real devices. The objective of these tests is to validate the overall end-user experience, functional flow coverage, UI validation, and performance testing. All tests (100%) should be run on real devices to ensure the best possible results.
+- Monitor
+  - While some organizations use Real User Monitoring (RUM) solutions that run on real devices, synthetic monitoring, which involves executing single-use automated tests to measure app performance every 10-15 minutes, also has value. For the most accurate results, it is recommended to use real devices for synthetic monitoring. This will provide the most accurate representation of the end-user experience and performance of the app.
 
 
