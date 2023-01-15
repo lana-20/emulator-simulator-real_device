@@ -32,4 +32,26 @@ __Emulators and simulators__ are best for testing in the early stages of develop
 
 Testing on __real devices__ provides the most reliable results and is ideal for usability and performance testing. It also allows for more realistic testing by applying real-world conditions and user scenarios.
 
+## Emulators and Simulators - Advantages and Use Cases
+
+Simulators and emulators are both __virtual mobile devices__ that offer various benefits for testing apps.
+
+__Advantages:__
+- Variety
+  - Simulators and emulators can virtualize a wide range of devices and operating system configurations, making it easy to test on multiple platforms, including those that are only supported through virtual devices. This allows for efficient validation and testing on specific device/OS combinations.
+- Price
+  - Virtual device solutions, whether local or cloud-based, are significantly more cost-effective than using real devices. As development teams need to test early and at a larger scale, the cost of using real devices for every developer's pre-commit validation can become prohibitive. Virtual devices provide a cost-efficient solution for organizations to scale and execute testing at an earlier stage in the process.
+- Starting on a Baseline
+  - Using virtual devices allows for a consistent starting point for testing, whereas achieving the same on real devices can be time-consuming and require a factory reset. This consistency and predictability of the virtual device state increases the reliability of automated testing, and eliminates the possibility of unexpected issues such as a locked device by another user. This makes the test execution more consistent and reliable as the device is always in the same state as it was designed for the tests.
+
+__Use Cases:__
+- Local Development and Validation
+  - Developers and testers commonly use simulators and emulators on their local machines for development, debugging, and local testing. The integrated development environments (IDEs) for native mobile applications, such as Xcode and Android Studio, include virtual device tools as part of the standard installation. Both have become stable and feature-rich in recent years, offering a wide range of capabilities for advanced testing.
+- Continuous Integration Testing
+  - Virtual device labs are mainly used for continuous integration (CI) testing. As DevOps and Agile methodologies become more popular, teams are testing earlier in the development process, known as shift-left testing. New test automation frameworks that are more aligned with developers’ skills and tools, such as Espresso and XCUITest, enable development teams to increase their test automation coverage.
+To run these tests, a proper execution environment, such as a test cloud, is required. Automated tests can be run either in the pre-commit phase, providing fast validation before committing or merging code, or triggered through CI several times a day, providing quick feedback to development teams on recent code changes.
+
+
+
+
 
