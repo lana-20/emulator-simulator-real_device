@@ -89,4 +89,10 @@ Phases/Stages:
 - Monitor
   - While some organizations use Real User Monitoring (RUM) solutions that run on real devices, synthetic monitoring, which involves executing single-use automated tests to measure app performance every 10-15 minutes, also has value. For the most accurate results, it is recommended to use real devices for synthetic monitoring. This will provide the most accurate representation of the end-user experience and performance of the app.
 
+## ∴ Conclusion
 
+Effective implementation of continuous testing and achieving optimal velocity in the mobile development process requires a balance between simulators, emulators, and real devices. Each of these platforms offers distinct values and advantages to developers and testers, but these benefits can only be fully realized when used at the appropriate stage of the development life cycle.
+
+Proper planning of test coverage, the platform under test, and testing tools is crucial for continuous testing activities. It's also important to stay informed about new devices, simulators and emulators that are released in the market.
+
+A cloud-based solution can provide the best of both worlds by allowing you to test on simulators, emulators, and real devices. This will allow you to have the ideal mix of devices in the cloud for your testing strategy and make the most of the benefits of each testing environment.
