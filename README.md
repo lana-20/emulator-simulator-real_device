@@ -2,7 +2,7 @@
 
 Real devices come with a great value and benefits, but also with their own costs. Mobile simulators and emulators can offer valuable benefits for both developers and testers, but it's worth noting that they also have limitations.
 
-## Emulators and Simulators
+## [Emulators](https://developer.android.com/studio/run/advanced-emulator-usage) and [Simulators](https://help.apple.com/simulator/mac/current/#/deve44b57b2a)
 
 Simulation and emulation are frequently confused, but they are distinct concepts. Both involve creating a virtual replica of a real-world system, but there are significant distinctions between the two when it comes to mobile app testing.
 
