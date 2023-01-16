@@ -47,8 +47,6 @@ often best used in earlier phases. Real devices in later phases.
 
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/212582975-e586d61e-8c16-4afa-abbe-2af96504bf88.png">
 
-often best used in earlier phases. Real devices in later phases.
-
 The most effective approach to mobile app testing is to use a combination of tests, including emulators, simulators, and real devices, depending on the stage of development. In the early stages, when features are still being developed, it is beneficial to perform smoke tests, unit tests, and other types of testing on emulators from the developer environment. As the build progresses and the need for more comprehensive testing and quality assurance increases, it is best to run full testing on real devices, and also include real-world user conditions to achieve a more accurate testing experience.
 
 ## Emulators and Simulators - Advantages and Use Cases
