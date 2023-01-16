@@ -42,11 +42,6 @@ __Emulators and simulators__ are best for testing in the early stages of develop
 
 Testing on __real devices__ provides the most reliable results and is ideal for usability and performance testing. It also allows for more realistic testing by applying real-world conditions and user scenarios.
 
-Map coverage needs to your test pipeline. Divide a common pipeline by testing types and triggers. Virtual devices are
-often best used in earlier phases. Real devices in later phases.
-
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/212582975-e586d61e-8c16-4afa-abbe-2af96504bf88.png">
-
 The most effective approach to mobile app testing is to use a combination of tests, including emulators, simulators, and real devices, depending on the stage of development. In the early stages, when features are still being developed, it is beneficial to perform smoke tests, unit tests, and other types of testing on emulators from the developer environment. As the build progresses and the need for more comprehensive testing and quality assurance increases, it is best to run full testing on real devices, and also include real-world user conditions to achieve a more accurate testing experience.
 
 ## Emulators and Simulators - Advantages and Use Cases
@@ -85,6 +80,11 @@ To run these tests, a proper execution environment, such as a test cloud, is req
 As testing occurs throughout the entire development process, from early stages to deployment and monitoring, it is necessary to utilize both real and virtual devices. A balanced approach that includes both types of platforms is essential for each phase in the application lifecycle.
 
 A proposed approach would be to use a combination of virtual devices for early testing and real devices for later stages, such as usability and performance testing, and for validating the application in real-world scenarios. This will allow teams to take advantage of the benefits of each type of platform and ensure the best possible results.
+
+Map coverage needs to your test pipeline. Divide a common pipeline by testing types and triggers. Virtual devices are
+often best used in earlier phases. Real devices in later phases.
+
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/212582975-e586d61e-8c16-4afa-abbe-2af96504bf88.png">
 
 Phases/Stages:
 - Code
