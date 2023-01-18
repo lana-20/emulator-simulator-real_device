@@ -2,7 +2,7 @@
 
 Real devices come with a great value and benefits, but also with their own costs. Mobile simulators and emulators can offer valuable benefits for both developers and testers, but it's worth noting that they also have limitations.
 
-## [Emulators](https://developer.android.com/studio/run/advanced-emulator-usage) and [Simulators](https://help.apple.com/simulator/mac/current/#/deve44b57b2a)
+## [Emulators](https://developer.android.com/studio/run/advanced-emulator-usage) 📱 and [Simulators](https://help.apple.com/simulator/mac/current/#/deve44b57b2a) 📱
 
 Simulation and emulation are frequently confused, but they are distinct concepts. Both involve creating a virtual replica of a real-world system, but there are significant distinctions between the two when it comes to mobile app testing.
 
@@ -36,11 +36,11 @@ The biggest difference between a simulator and an emulator is that __a simulator
 
 Mobile testing requires movement and different hardware, meaning that you need to test your app on physical devices to be sure that everything works together in real-life situations. Emulators and simulators should be used only for very basic tests such as simple functionality (is the button clickable?) or to make sure the look-and-feel of the app is OK.
 
-## Real Devices
+## Real Devices 📱
 
 Using real devices in mobile testing enables you to test your app on actual hardware, providing an accurate representation of how it performs in a customer's hands. This is useful for ensuring the app's functionality and compatibility on various devices.
 
-## Real Devices vs. Emulators vs. Simulators
+## Real Devices 📱 vs. Emulators 📱 vs. Simulators 📱
 
 The discussion surrounding the use of real devices, emulators, and simulators for mobile testing has been a longstanding and contentious topic in the mobile industry.
 
@@ -50,12 +50,12 @@ Testing on __real devices__ provides the most reliable results and is ideal for 
 
 The most effective approach to mobile app testing is to use a combination of tests, including emulators, simulators, and real devices, depending on the stage of development. In the early stages, when features are still being developed, it is beneficial to perform smoke tests, unit tests, and other types of testing on emulators from the developer environment. As the build progresses and the need for more comprehensive testing and quality assurance increases, it is best to run full testing on real devices, and also include real-world user conditions to achieve a more accurate testing experience.
 
-## Emulators and Simulators - Advantages and Use Cases
+## Emulators and Simulators - Advantages ⨁ and Use Cases 👥
 
 Simulators and emulators are both __virtual mobile devices__ that offer various benefits for testing apps.
 Emulation and simulation play a crucial role in the software development life cycle, as they can greatly reduce costs for developers and testers. They are often faster to establish and run, have fewer errors, and are frequently integrated into the developer's environment, making them convenient for quick feedback.
 
-__Advantages:__
+__⨁ Advantages:__
 - Variety
   - Simulators and emulators can virtualize a wide range of devices and operating system configurations, making it easy to test on multiple platforms, including those that are only supported through virtual devices. This allows for efficient validation and testing on specific device/OS combinations.
 - Price
@@ -63,14 +63,14 @@ __Advantages:__
 - Starting on a Baseline
   - Using virtual devices allows for a consistent starting point for testing, whereas achieving the same on real devices can be time-consuming and require a factory reset. This consistency and predictability of the virtual device state increases the reliability of automated testing, and eliminates the possibility of unexpected issues such as a locked device by another user. This makes the test execution more consistent and reliable as the device is always in the same state as it was designed for the tests.
 
-__Use Cases:__
+__👥 Use Cases:__
 - Local Development and Validation
   - Developers and testers commonly use simulators and emulators on their local machines for development, debugging, and local testing. The integrated development environments (IDEs) for native mobile applications, such as Xcode and Android Studio, include virtual device tools as part of the standard installation. Both have become stable and feature-rich in recent years, offering a wide range of capabilities for advanced testing.
 - Continuous Integration Testing
   - Virtual device labs are mainly used for continuous integration (CI) testing. As DevOps and Agile methodologies become more popular, teams are testing earlier in the development process, known as shift-left testing. New test automation frameworks that are more aligned with developers’ skills and tools, such as Espresso and XCUITest, enable development teams to increase their test automation coverage.
 To run these tests, a proper execution environment, such as a test cloud, is required. Automated tests can be run either in the pre-commit phase, providing fast validation before committing or merging code, or triggered through CI several times a day, providing quick feedback to development teams on recent code changes.
 
-## Real Devices - Advantages
+## Real Devices - Advantages ⨁
 
 - Nothing Compares to the Real Thing
   - While virtual devices can be useful for basic testing, truly validating an app's performance requires testing on real devices. Virtual devices are helpful for functional testing, but they may also produce false positives, where the tests pass but the app may have issues in real-world scenarios. This is because simulators and emulators primarily test the main flow of the application (happy path), rather than how it handles negative or extreme cases.
@@ -81,7 +81,7 @@ To run these tests, a proper execution environment, such as a test cloud, is req
 - Improved Hardware and Sensor-Related Validations
   - Common scenarios that can be virtualized include those that involve interactions with device hardware and sensors, such as the camera, accelerometer, and biometrics. However, it's worth noting that in some cases, the behavior of real and virtual devices may vary.
 
-## Balance Virtual and Real Devices
+## ⚖ Balance Virtual and Real Devices
 
 As testing occurs throughout the entire development process, from early stages to deployment and monitoring, it is necessary to utilize both real and virtual devices. A balanced approach that includes both types of platforms is essential for each phase in the application lifecycle.
 
@@ -92,13 +92,13 @@ often best used in earlier phases. Real devices in later phases.
 
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/212582975-e586d61e-8c16-4afa-abbe-2af96504bf88.png">
 
-Phases/Stages:
-- Code
+Phases/Stages 🌕🌑:
+- 🌓 Code
   - Local Validation
     - During the development phase, developers should validate their code using either a local device or a virtual device, which is often integrated into the developer's IDE. For UI validation, it's recommended to use real devices rather than virtual ones to ensure that the outcome appears as expected.
   - Pre-Commit Validation
     - Unit and UI unit tests should typically be run on virtual devices (90% of the time). However, there may be instances where developers make changes to components that they anticipate will behave differently on real devices. In such cases, it is recommended to provide developers with on-demand tools that allow them to choose which tests to run and on which platform (virtual or real) to run them. This will enable developers to verify the behavior of their changes on both virtual and real devices and make more informed decisions.
-- Build
+- 🌔 Build
   - Commit Job
     - This process should run every time a developer makes a commit, performing a basic check to ensure that the change doesn't break the build or cause significant regression. Because of the need to run this job at scale with each commit, these tests should be run on virtual devices to ensure efficient execution.
   - Multi-Merge Validation
@@ -108,9 +108,9 @@ Phases/Stages:
 
       - ⦿ _The frequency of the CI process will vary depending on the team's maturity level, it can run one or more times a day. The aim is to create a balance that enables scalability while still providing comprehensive test coverage and insights into the end-user experience. To achieve scalability and enable parallel validation for multiple developers and teams, a typical CI mix might consist of a combination of virtual devices for functional testing and real devices for usability and performance testing. This will allow for efficient execution and provide valuable feedback on the application's overall performance._ ⦿
 
-- Test
+- 🌖 Test
   - Additional testing activities that take place outside the CI process will be run on real devices. The objective of these tests is to validate the overall end-user experience, functional flow coverage, UI validation, and performance testing. All tests (100%) should be run on real devices to ensure the best possible results.
-- Monitor
+- 🌗 Monitor
   - While some organizations use Real User Monitoring (RUM) solutions that run on real devices, synthetic monitoring, which involves executing single-use automated tests to measure app performance every 10-15 minutes, also has value. For the most accurate results, it is recommended to use real devices for synthetic monitoring. This will provide the most accurate representation of the end-user experience and performance of the app.
 
 ## ∴ Conclusion
@@ -123,6 +123,6 @@ A cloud-based solution can provide the best of both worlds by allowing you to te
 
 ----
 
-Extra Reddit Reading for Game Testing: __PlayStation PS4 is capable of playing PS2 games through emulation__ 
+🔗 Extra Reddit 📚 for Game Testing: __PlayStation PS4 is capable of playing PS2 games through emulation__ 
 - [PS2 vs PCSX2](https://www.reddit.com/r/PCSX2/comments/lhi4uv/ps2_vs_pcsx2/)
 - [PS2 vs EMULATOR](https://www.reddit.com/r/ps2/comments/n35d7t/ps2_vs_emulator/)
