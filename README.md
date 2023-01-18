@@ -1,5 +1,7 @@
 # <img src="https://user-images.githubusercontent.com/70295997/212560102-5b3e9147-76e9-41f3-b5c8-54a8b9ce03f1.png" width=40> Testing Mobile Apps on Emulators vs Simulators (Virtual Devices) vs Real Devices
 
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/70295997/213092904-bdba5671-2fe7-45ea-93de-d3735f1fd816.png">
+
 Real devices come with a great value and benefits, but also with their own costs. Mobile simulators and emulators can offer valuable benefits for both developers and testers, but it's worth noting that they also have limitations.
 
 ## [Emulators](https://developer.android.com/studio/run/advanced-emulator-usage) 📱 and [Simulators](https://help.apple.com/simulator/mac/current/#/deve44b57b2a) 📱
