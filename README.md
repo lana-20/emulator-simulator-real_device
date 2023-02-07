@@ -92,7 +92,8 @@ A proposed approach would be to use a combination of virtual devices for early t
 Map coverage needs to your test pipeline. Divide a common pipeline by testing types and triggers. Virtual devices are
 often best used in earlier phases. Real devices in later phases.
 
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/212582975-e586d61e-8c16-4afa-abbe-2af96504bf88.png">
+<img width="1000" src="https://user-images.githubusercontent.com/70295997/212582975-e586d61e-8c16-4afa-abbe-2af96504bf88.png">
+<img width="1000" src="https://user-images.githubusercontent.com/70295997/217152946-eea16fb4-e898-4996-b51d-064ad40f7928.png">
 
 Phases/Stages 🌕🌑:
 - 🌓 Code
