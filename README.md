@@ -12,7 +12,7 @@ In mobile testing, an __emulator__ is a software that mimics the functionality o
 
 A __simulator__, on the other hand, is a virtual device for testing iOS apps on a Mac host, such as mimicing the behavior of an iPhone or iPad. Simulators mimic the basic behaviors, variables, and configurations of a real device that exist in an app’s production environment. Simulation involves replicating elements of the physical world within a virtual setting, allowing for an approximation of their functionality. It captures essential features, but may not fully adhere to the laws of the actual environment.
 
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/212569750-96ab75d1-fb5a-4d59-b09f-4ac5a877dfe0.png">
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/217145402-7094de36-c845-48ee-85d8-83f8496c21fb.png">
 
 __Emulators__ provide an operating environment that closely resembles the functionality and capabilities of a mobile device model, like:
 - Emulated incoming phone calls and text messages.
