@@ -8,9 +8,9 @@ Real devices come with a great value and benefits, but also with their own costs
 
 Simulation and emulation are frequently confused, but they are distinct concepts. Both involve creating a virtual replica of a real-world system, but there are significant distinctions between the two when it comes to mobile app testing.
 
-In mobile testing, an __emulator__ is a software that mimics the functionality of a real Android device and allows you to test your app on it. An emulator mimics all of the hardware and software/OS features of the device for the production environment. 
+In mobile testing, an __emulator__ is a software that mimicks the functionality of a real Android device and allows to test an app on it. An emulator mimics all of the hardware and software/OS features of the device for the production environment. 
 
-A __simulator__, on the other hand, is a virtual device for testing iOS apps on a Mac host, such as mimicing the behavior of an iPhone or iPad. Simulators mimic the basic behaviors, variables, and configurations of a real device that exist in an app’s production environment. Simulation involves replicating elements of the physical world within a virtual setting, allowing for an approximation of their functionality. It captures essential features, but may not fully adhere to the laws of the actual environment.
+A __simulator__, on the other hand, is a virtual device for testing iOS apps on a Mac host, such as mimicking the OS behavior of an iPhone or iPad. Simulators mimic the basic behaviors, variables, and configurations of a real device that exist in an app’s production environment. Simulation involves replicating elements of the physical world within a virtual setting, allowing for an approximation of their functionality. It captures essential features, but may not fully adhere to the laws of the actual environment.
 
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/217145402-7094de36-c845-48ee-85d8-83f8496c21fb.png">
 
@@ -21,7 +21,7 @@ __Emulators__ provide an operating environment that closely resembles the functi
 - Device orientation and rotation.
 - Hardware sensors.
 
-__Simulators__ can be useful for early testing of iOS apps by creating a simulated environment that mimics the functionality of a specific mobile device model. However, it's important to note that simulators have limitations and should not be relied upon for testing of hardware components, gestures, or real-world user scenarios. They are best for lightweight functional testing.
+__Simulators__ can be useful for early testing of iOS apps by creating a simulated OS environment that mimics the functionality of a specific mobile device model. However, it's important to note that simulators have limitations and should not be relied upon for testing of hardware components, gestures, or real-world user scenarios. They are best for lightweight functional testing.
 
 __Emulators vs. Simulators__
 
@@ -31,10 +31,9 @@ __Simulators__ mimic the OS, not the hardware. They allow the user to validate a
 
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/212575342-df2cb30f-db20-459c-806e-a0d4db584914.png">
 
-
 <table width="100%"><thead><tr><th style="text-align:left; width: 34%; background: #565656; color: white">Criteria</th><th style="text-align:left; width: 33%; background: #565656; color: white">Simulation</th><th style="text-align:left; width: 33%; background: #565656; color: white">Emulation</th></tr></thead><tbody><tr><td align="justify">Provided by</td><td>Device manufacturers and other companies.</td><td>Device manufacturers.</td></tr><tr><td>Target area</td><td>Internal behavior of the mobile device.</td><td>Mobile device hardware, software, and operating system.</td></tr><tr><td>Internal structure</td><td>Written in high-level language.</td><td>Written in machine-level assembly language.</td></tr><tr><td>Used/suitable for</td><td>Unit testing, automation testing.</td><td>Unit testing, automation testing, debugging.</td></tr><tr><td>Performance</td><td>Faster compared to emulators.</td><td>Slower due to latency since it involves binary translation.</td></tr><tr><td>Reliability</td><td>Low, as it cannot simulate all types of user interactions.</td><td>Same for emulation, as it cannot simulate all types of user interactions.</td></tr></tbody></table>
 
-The biggest difference between a simulator and an emulator is that __a simulator attempts to duplicate the behavior of the mobile device, while an emulator tries to duplicate the entire inner architecture of the mobile device and is therefore closer to the target platform__.
+‼️ The biggest difference between a simulator and an emulator is that __a simulator attempts to duplicate the behavior of the mobile device, while an emulator tries to duplicate the entire inner architecture of the mobile device and is therefore closer to the target platform__. In other words, __an Android emulator mimicks both the device's OS and hardware - it's an actual VM hosted on my computer. An iOS simulator only mimicks the OS, not the hardware - it's merely another app installed on my machine which I can open with command <code>open -a simulator</code>.__
 
 Mobile testing requires movement and different hardware, meaning that you need to test your app on physical devices to be sure that everything works together in real-life situations. Emulators and simulators should be used only for very basic tests such as simple functionality (is the button clickable?) or to make sure the look-and-feel of the app is OK.
 
