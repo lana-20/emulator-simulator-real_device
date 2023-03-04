@@ -23,8 +23,10 @@ __Emulators__ provide an operating environment that closely resembles the functi
 
 <img width="300" src="https://user-images.githubusercontent.com/70295997/222620274-bac1911d-212d-44f8-9a6f-dd9e37002f59.png">
 
-
 __Simulators__ can be useful for early testing of iOS apps by creating a simulated OS environment that mimics the functionality of a specific mobile device model. However, it's important to note that simulators have limitations and should not be relied upon for testing of hardware components, gestures, or real-world user scenarios. They are best for lightweight functional testing.
+
+<img width="300" src="https://user-images.githubusercontent.com/70295997/222859680-1e3f6cc2-5616-4b76-8571-2f67c9559803.png">
+
 
 __Emulators vs. Simulators__
 
