@@ -40,6 +40,8 @@ __Simulators__ mimic the OS, not the hardware. They allow the user to validate a
 
 ‼️ The biggest difference between a simulator and an emulator is that __a simulator attempts to duplicate the behavior of the mobile device, while an emulator tries to duplicate the entire inner architecture of the mobile device and is therefore closer to the target platform__. In other words, __an Android emulator mimicks both the device's OS and hardware - it's an actual VM hosted on my computer. An iOS simulator only mimicks the OS, not the hardware - it's merely another app installed on my machine which I can open with command <code>open -a simulator</code>.__
 
+![image](https://github.com/lana-20/emulator-simulator-real_device/assets/70295997/88577489-f51b-45e1-93cd-97f69d7720e2)
+
 Mobile testing requires movement and different hardware, meaning that you need to test your app on physical devices to be sure that everything works together in real-life situations. Emulators and simulators should be used only for very basic tests such as simple functionality (is the button clickable?) or to make sure the look-and-feel of the app is OK.
 
 ## Real Devices 📱
