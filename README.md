@@ -1,3 +1,7 @@
+__NOTE__: This repo has been remastered and posted on [Medium](https://medium.com/@begunova/emulator-vs-simulator-vs-real-device-15ce1dd5babf).
+
+<hr>
+
 # <img src="https://user-images.githubusercontent.com/70295997/212560102-5b3e9147-76e9-41f3-b5c8-54a8b9ce03f1.png" width=40> Testing Mobile Apps on Emulators vs Simulators (Virtual Devices) vs Real Devices
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/70295997/213092904-bdba5671-2fe7-45ea-93de-d3735f1fd816.png">
